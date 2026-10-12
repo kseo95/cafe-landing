@@ -1,0 +1,33 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; color: #3b2a20; line-height: 1.6; }
+
+.hero { min-height: 90vh; background: linear-gradient(rgba(40,25,15,.65), rgba(40,25,15,.65)), #6f4e37; color: #fff; display: flex; flex-direction: column; }
+nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; }
+.logo { font-size: 1.4rem; font-weight: 700; }
+nav ul { display: flex; gap: 24px; list-style: none; }
+nav a { color: #fff; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+
+.hero-text { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 16px; }
+.hero-text h1 { font-size: 3rem; margin-bottom: 12px; }
+.hero-text p { font-size: 1.15rem; margin-bottom: 28px; }
+.btn { background: #e8b86d; color: #3b2a20; padding: 12px 28px; border-radius: 999px; text-decoration: none; font-weight: 700; }
+.btn:hover { background: #f0c887; }
+
+.section { padding: 80px 8%; text-align: center; }
+.section.alt { background: #f6ede3; }
+.section h2 { font-size: 2rem; margin-bottom: 32px; }
+
+.cards { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+.card { background: #fff; border: 1px solid #eadccd; border-radius: 16px; padding: 28px; width: 260px; box-shadow: 0 4px 12px rgba(0,0,0,.06); }
+.card .emoji { font-size: 2.5rem; }
+.card h3 { margin: 12px 0 6px; }
+.card p { font-size: .95rem; margin-bottom: 12px; }
+
+footer { background: #3b2a20; color: #d9c7b5; text-align: center; padding: 24px; font-size: .9rem; }
+
+@media (max-width: 600px) {
+  .hero-text h1 { font-size: 2.1rem; }
+  nav ul { gap: 14px; }
+}
